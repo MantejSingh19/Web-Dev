@@ -1,0 +1,112 @@
+   * {
+       padding: 0;
+       margin: 0;
+   }
+
+   body {
+       background-color: lemonchiffon;
+   }
+
+   h1 {
+       background-color: gold;
+       color: rgb(235, 9, 55);
+       text-align: center;
+
+   }
+
+   header {
+       background-color: burlywood;
+       color: rgb(24, 8, 241);
+       text-align: center;
+       width: 50%;
+       display: inline-block;
+       position: relative;
+       top: -30px;
+       height: 125px;
+   }
+
+   .table {
+       background-color: darkkhaki;
+       color: blue;
+       text-align: center;
+       width: 49%;
+       display: inline-block;
+       position: relative;
+       top: 1px;
+
+   }
+
+   .click {
+       text-align: center;
+       border: 3px solid gold;
+   }
+
+   .pict {
+       text-align: center;
+       background-color: blanchedalmond;
+       border: 3px solid gold;
+   }
+
+   .head {
+       background-color: darkgoldenrod;
+   }
+
+   #h3 {
+       background-color: blanchedalmond;
+   }
+
+
+   #para {
+       background-color: cadetblue;
+       color: gold;
+       line-height: 1.5;
+       font-size: medium;
+       font-style: oblique;
+   }
+
+   #click {
+       background-color: gold;
+   }
+
+   #tell {
+       background-color: chocolate;
+   }
+
+   #img {
+       background-image: url(pexels-sagui-andrea-618833.jpg);
+   }
+
+   #form {
+       background-image: url(pexels-aleksandar-pasaric-325185.jpg);
+       background-repeat: no-repeat;
+       background-size: contain;
+       position: relative;
+       left: 469px;
+   }
+
+
+   .center {
+       text-align: center;
+       border: 2px solid gold;
+   }
+
+   footer {
+       text-align: center;
+   }
+
+   #ok {
+       background-color: darkgoldenrod;
+   }
+
+   .yes {
+       text-align: center;
+   }
+
+   .last {
+       background-color: black;
+       color: white;
+       text-align: center;
+       width: 100%;
+       height: 40px;
+       padding-top: 15px;
+   }
