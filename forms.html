@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms and help</title>
+    <link rel="stylesheet" href="forms.css" />
+  </head>
+  <body>
+    <form action="" class="container">
+      <h2 class="head">Help and Contact Form</h2>
+      <p>Name: <input type="text" name="name" required /></p>
+      <fieldset>
+        <legend>Gender</legend>
+        <p>
+          Male <input type="radio" name="gender" id="male" />
+          Female<input type="radio" name="gender" id="female" />
+        </p>
+      </fieldset>
+      <p>
+        Problem:
+        <textarea name="problem" id="problem" cols="100" rows="8" placeholder="Enter you problem here"></textarea>
+      </p>
+      <p>Email: <input type="email" name="email" id="email" /></p>
+      <p>Pincode: <input type="number" name="pincode" id="pincode" /></p>
+      <h3>Payment Info</h3>
+      <p>
+        Card Type:
+        <select name="card" id="card">
+          <option value="">Select a card type</option>
+          <option value="visa">Visa</option>
+          <option value="rupay">Rupay</option>
+          <option value="master">Master Card</option>
+        </select>
+      </p>
+      <p>Card Number: <input type="number" name="card number" required /></p>
+      <p>Card Expiry: <input type="date" class="expiry" /></p>
+      <p>CVV: <input type="password" class="cvv" required /></p>
+      <input type="submit" value="Submit" />
+    </form>
+    <h4 style="text-align: center"><a href="index.html"> &larr; Home </a></h4>
+  </body>
+</html>
