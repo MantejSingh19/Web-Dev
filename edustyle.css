@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(215, 239, 215);
+}
+table,td,tr,th{
+    border: 2px solid black;
+    border-collapse:collapse;
+   
+    padding: 20px;
+}
+.table{
+    margin-left: 28%
+}
+th{
+    background-color: antiquewhite;
+}
+tr{
+    background-color: beige;
+}
+.table2{
+    margin-left: 42%;
+}

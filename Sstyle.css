@@ -1,0 +1,48 @@
+h5{
+    color: bisque;
+}
+nav a{
+    text-decoration: none;
+    color: aqua;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+nav{
+    background-color: black;
+    padding: 20px;
+    
+}
+nav a:hover{
+color: brown;
+}
+nav a:visited{
+    color:burlywood;
+    }
+li{
+    list-style: none;
+}
+.para{
+    color: crimson;
+}
+a.para{
+    color: cyan;
+}
+li em{
+    color: darkgray;
+}
+section+p{
+    font-size: larger;
+}
+a:hover{
+    text-decoration: double;
+}
+#one{
+    color: mediumspringgreen;
+}
+li[class]{
+    font-size: larger;
+}
+li[class="a"]{
+    font-size: small;
+}

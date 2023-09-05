@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px 200px; */
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 10px;
+        }
+        .item{
+            background-color: aqua;
+            border: 3px green solid;
+            border-radius: 3px;
+
+        }
+        .item1{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        #test{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .nested{
+            border: 2px green solid;
+            background-color: bisque;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1" id="test">
+            <div class="nested">cjcj</div>
+            <div class="nested">kvmvm</div>
+            <div class="nested">vkvn</div>
+        </div>
+        <div class="item"> class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, hic iste aliquam commodi excepturi dolore ex laudantium saepe odio repellat?</div>
+        <div class="item">dabba 3</div>
+        <div class="item">dabba 4</div>
+        <div class="item">dabba 5</div>
+    </div>
+</body>
+</html>

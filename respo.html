@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness</title>
+    <style>
+        .first{
+            float: left;
+            background-color: antiquewhite;
+            padding: 22px;
+            width: 22%;
+        }
+        .second{
+            float: left;
+            background-color: rgb(30, 199, 33);
+           padding: 22px;
+            width: 22%;
+        }
+        .third{
+            float: left;
+            background-color: rgb(230, 135, 11);
+            padding: 22px;
+            width: 22%;
+        }
+        .fourth{
+            float: left;
+            background-color: rgb(11, 18, 230);
+            padding: 22px;
+            width: 21%;
+        }
+        @media all and (max-width:500px){
+            .first,.second,.third,.fourth{
+                width: 99%;
+            }
+        }
+        @media all and (min-width:500px) and (max-width:900px){
+            .first,.second,.third,.fourth{
+                width: 41%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="first">
+        <p><h2>hiii</h2>
+        My Name is Rahul</p>
+        </div>
+        <div class="second">
+            <p><h2>hi</h2>
+            My Name is Ranjit</p>
+            </div>
+            <div class="third">
+                <p><h2>hieeeeee</h2>
+                My Name is Abhi</p>
+                </div>
+                <div class="fourth">
+                    <p><h2>hieee</h2>
+                    My Name is Mantej</p>
+                    </div>
+
+</body>
+</html>
