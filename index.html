@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="cont">
+Time now is:-<span id="time"></span>
+    </div>
     <head>
       <h1 style="text-align: center" class="heading">Portfolio</h1>
     </head>
-    <div class="detail">
+    <div class="detail" id="know">
       <ol>
         <li>PH.NO-9149773620</li>
         <li>Education-Engineer</li>
@@ -27,16 +30,12 @@
       width="140px"
     />
     <h2 style="color: blueviolet; margin-left: 20px">About</h2>
-    <p class="text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quas
-      reprehenderit molestiae deleniti reiciendis! Cumque adipisci tenetur
-      necessitatibus quos sint dignissimos nesciunt? Temporibus minima, rerum
-      aliquam distinctio consequatur, dolor culpa nihil aspernatur ex, officiis
-      sit veniam nesciunt ipsam aut assumenda excepturi natus dolorem
-      repellendus at. Veniam, iste iusto porro fuga placeat dolores animi
-      eveniet laudantium id blanditiis vel voluptas repudiandae.
+    <p class="text" id="para">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, eum! Laborum veniam debitis praesentium consequatur repudiandae consectetur tenetur nesciunt maiores ducimus odit delectus quo excepturi, totam quia voluptates dolorum ea vero maxime minus accusantium provident obcaecati modi saepe. Nemo explicabo ea, dolorem repudiandae ratione ex vitae quis reiciendis iusto nulla nisi voluptatem quisquam voluptate animi vel corporis officia harum reprehenderit deleniti dolore libero dolor quos? Ad amet dignissimos rem vitae hic nihil ratione provident vel impedit. Ea provident hic error sequi? Dicta molestias tempora vitae quos minima reiciendis corrupti beatae labore voluptatem sapiente placeat in, minus sit provident architecto tenetur.
     </p>
-
+    <div class="butn">
+    <button id="btn" onclick="togglehide()"> <b> Show/Hide </b></button>
+  </div>
     <div class="grid">
       <div class="pehla">
         <h3 style="text-align: center">10th-73%</h3>
@@ -78,5 +77,98 @@
     <h4 style="text-align: center">
       <a href="eduach.html"> Educaion and Achievements &rarr;</a>
     </h4>
+
+    <script>
+
+      // let age=prompt("what is your age",18);
+     
+      // if(age>18)
+      // {
+      //   alert("you can drink");
+      // }
+      // else{
+      //   alert("you cannot drink");
+      // }
+
+      // confirm("do you work");
+
+
+
+      // let main=document.getElementById("know");
+      // console.log(main);
+      // let rt=document.querySelectorAll("#know>ol>li");
+      // console.log(rt);
+
+
+      function togglehide()
+      {
+        let btn=document.getElementById("btn");
+        let para=document.getElementById("para");
+        if(para.style.display !="none")
+        {
+          para.style.display="none";
+        }
+        else{
+          para.style.display="block";
+        }
+      }
+
+
+
+    //   let para=document.getElementById("para");
+    // para.addEventListener("mouseover",function run()
+    // {
+    //   alert("Mouse Inside");
+    // });
+
+
+
+  function yoo(name)
+  {
+    console.log("GM"+name);
+  };
+
+//setTimeout(yoo,5000,"Mantej");
+
+setInterval(yoo,2000,"Mantej");
+
+
+function displaytime()
+{
+  let time=new Date;
+  let tm=document.getElementById("time");
+  tm.innerHTML=time;
+}
+setInterval(displaytime,1000);
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>

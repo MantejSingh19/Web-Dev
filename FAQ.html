@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ-Section</title>
+    <script src="https://kit.fontawesome.com/2eb8e9343c.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: rgb(247, 216, 247);
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6rem;
+        }
+        .accordian{
+            background-color: white;
+            padding: 4px 16px;
+            margin-bottom: 16px;
+            border-radius: 4px;
+            box-shadow: 1px 1px 5px rgb(252, 199, 207);
+            cursor: pointer;
+        }
+        .question{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .iconn{
+            margin-right: 15px;
+            transition: transform 0.2s;
+        }
+        .iconn.active{
+            transform: rotate(-180deg);
+        }
+        .answer{
+            color: #666;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s;
+        }
+        /* .answer.active{
+            max-height: fit-content;
+        } */
+    </style>
+</head>
+<body>
+    <h2>FAQ</h2>
+    <div class="accordian">
+        <div class="question">
+<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, doloremque.
+</h4>
+<i class="fa-solid fa-caret-down iconn"></i>
+        </div>
+        <div class="answer">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita impedit laudantium commodi placeat hic.</p>
+        </div>
+    </div>
+    <div class="accordian">
+        <div class="question">
+<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, doloremque.
+</h4>
+<i class="fa-solid fa-caret-down iconn"></i>
+        </div>
+        <div class="answer">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita impedit laudantium commodi placeat hic.</p>
+        </div>
+    </div>
+    <div class="accordian">
+        <div class="question">
+<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, doloremque.
+</h4>
+<i class="fa-solid fa-caret-down iconn"></i>
+        </div>
+        <div class="answer">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita impedit laudantium commodi placeat hic.</p>
+        </div>
+    </div>
+    <div class="accordian">
+        <div class="question">
+<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, doloremque.
+</h4>
+<i class="fa-solid fa-caret-down iconn"></i>
+        </div>
+        <div class="answer">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita impedit laudantium commodi placeat hic.</p>
+        </div>
+    </div>
+    <div class="accordian">
+        <div class="question">
+<h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, doloremque.
+</h4>
+<i class="fa-solid fa-caret-down iconn"></i>
+        </div>
+        <div class="answer">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita impedit laudantium commodi placeat hic.</p>
+        </div>
+    </div>
+    <script>
+        const accordians=document.querySelectorAll('.accordian');
+        accordians.forEach(accordian=>{
+            const icon=accordian.querySelector('.iconn');
+            const ans=accordian.querySelector('.answer');
+
+            accordian.addEventListener('click',()=>{
+                // icon.classList.toggle('active');
+                // ans.classList.toggle('active');
+                if(icon.classList.contains('active')){
+                    icon.classList.remove('active');
+                    ans.style.maxHeight=null;
+                }
+                else{
+                    icon.classList.add('active');
+                    ans.style.maxHeight=ans.scrollHeight + 'px';   
+                }
+            })
+        })
+    </script>
+</body>
+</html>

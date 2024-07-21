@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
    * {
        padding: 0;
        margin: 0;
@@ -111,7 +111,6 @@
        height: 40px;
        padding-top: 15px;
    }
-=======
 * {
   box-sizing: border-box;
   list-style: none;
@@ -261,4 +260,16 @@ li a:hover {
   background-color: rgb(159, 238, 159);
   border: 2px solid rgb(56, 200, 56);
 }
->>>>>>> 996c01d10cf7e7e0678f5cdf137b824f21bd22f1
+.butn{
+  display: flex;
+  justify-content: center;
+}
+#btn{
+  padding: 16px;
+  background-color: antiquewhite;
+  color: brown;
+  text-align: center;
+  }
+  .cont{
+    text-align: center;
+  }
